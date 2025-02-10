@@ -5,7 +5,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 from pdf2image import convert_from_path
 
 # Configuración del bot
-TOKEN = "8109725097:AAGf6-M5PzyEpFcghvZHSZDoE3u_tT6YRb0"  # Reemplaza con tu token de Telegram
+TOKEN = os.environ.get("8109725097:AAGf6-M5PzyEpFcghvZHSZDoE3u_tT6YRb0")  # Lee el token desde variables de entorno
 DOWNLOAD_PATH = "temp_pdf"
 OUTPUT_PATH = "temp_jpg"
 
